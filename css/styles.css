@@ -1,44 +1,93 @@
 * {
     font-family: sans-serif;
-    text-align: center;
-    color: aqua;
-    background-color: antiquewhite;
     margin: 0;
     padding: 0;
 }
 
+.header{
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333333;
+    padding: 8px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 40px;
+    flex-shrink: 0;
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.planner-link {
+    color: aqua;
+}
+
 .flex-container {
     display: flex;
-    margin: auto;
-    width: 800px;
-    background-color: #333333;
     justify-content: space-around;
+    background-color: #333333;
+    padding: 15px 40px;
 }
 
-h1 {
-    font-size: 36px;
-    background-color: #333333;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
+.left-side {
+    flex: 1 2 25%;
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
 }
+
+.recipe-container {
+    display: flex;
+    flex: 1 1 50%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+
 
 .item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
     width: 200px;
     padding: 15px;
-    background-color: #333333;
+    gap: 15px;
+}
+.link {
+    color: #222222;
 }
 
 img {
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 200px;
+    border-radius: 15px;
 }
 
 .link {
     width: 200px;
     flex-wrap: wrap;
     font-weight: 800;  
-    background-color: #333333;  
+}
+
+.right-side {
+    flex: 1 2 25%;
+    text-align: center;
+    color: salmon;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .footer {
